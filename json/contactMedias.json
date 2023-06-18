@@ -1,0 +1,27 @@
+[
+  {
+    "name": "Email - yewyew6933@hotmail.com",
+    "link": "mailto:yewyew6933@hotmail.com",
+    "isEmail": true
+  },
+  {
+    "name": "WhatsApp - +6010 355 0506",
+    "link": "https://wa.me/60103550506",
+    "image": "brand/whatsapp.png"
+  },
+  {
+    "name": "Telegram - @yewyewXD",
+    "link": "https://t.me/yewyewXD",
+    "image": "brand/telegram.png"
+  },
+  {
+    "name": "LinkedIn - @yewyewxd",
+    "link": "https://www.linkedin.com/in/yewyewxd/",
+    "image": "brand/linkedin.png"
+  },
+  {
+    "name": "Github - @yewyewXD",
+    "link": "https://github.com/yewyewXD",
+    "image": "brand/github.png"
+  }
+]

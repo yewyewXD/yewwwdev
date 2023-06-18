@@ -1,0 +1,75 @@
+[
+  {
+    "name": "Nazim Kerimbekov",
+    "role": "Product Manager @ Crypto.com",
+    "link": "https://www.linkedin.com/in/nazim1/",
+    "message": "It was an absolute pleasure to work with Yew. He did a great job at implementing all of the needed features and making my site look way better than I could have imagined. Looking forward on working with him again soon!",
+    "country": "ch"
+  },
+
+  {
+    "name": "Michael Foster",
+    "role": "Co-founder @ LocalCryptos",
+    "link": "https://twitter.com/LocalCryptosEN",
+    "message": "10/10. Yew is a multi-talented freelancer with excellent critical thinking and communication skills. We needed Yew's help for a research project and he delivered exactly what we asked for and more in a timely and efficient manner. I hope to work with Yew again in the future.",
+    "country": "au",
+    "isTwitter": true
+  },
+
+  {
+    "name": "Tiff Lau",
+    "role": "UX Designer II @ Amazon",
+    "link": "https://www.linkedin.com/in/tiffklau/",
+    "message": "Prompt responses and excellent execution without much supervision",
+    "country": "ca"
+  },
+
+  {
+    "name": "Peter Cha",
+    "role": "Associate @ Hines",
+    "link": "https://www.linkedin.com/in/peter-cha-4572913b/",
+    "message": "10/10 appreciate all the good work!",
+    "country": "kr"
+  },
+
+  {
+    "name": "Henry Obringer",
+    "role": "Channel Manager @ The Motley Fool",
+    "link": "https://www.linkedin.com/in/henry-obringer/",
+    "message": "Yew is a pro and is easy to work with. Thank you!",
+    "country": "us"
+  },
+
+  {
+    "name": "Akharavat Sethichawlakul",
+    "role": "COE @ OneChat.ai",
+    "link": "https://www.linkedin.com/in/akharavat-%F0%9F%9A%80-s-270359159/",
+    "message": "One of the best guys I have worked with on UpWork - easy to deal with; communicates clear; and goes overboard for everything he does !",
+    "country": "th"
+  },
+
+  {
+    "name": "Michele Silence",
+    "role": "President @ KID-FIT",
+    "link": "https://www.linkedin.com/in/kidfit/",
+    "message": "Yew was great to work with, was very quick and understood exactly what we needed. We will be using his services again when we need more work in this area.",
+    "country": "us"
+  },
+
+  {
+    "name": "Kasivairavan Ramakrishnan",
+    "role": "Founder @ BlizzToken",
+    "link": "https://twitter.com/BlizzToken",
+    "message": "Yew is extremely knowledgeable and passionate about coding and web development. He is highly professional in his work. A great asset to any team.",
+    "isTwitter": true,
+    "country": "sg"
+  },
+
+  {
+    "name": "Eike B. Post",
+    "role": "Managing Partner @ Nuclear Block Ventures",
+    "link": "https://www.linkedin.com/in/eikepost/",
+    "message": "It was an absolute pleasure to be working with KangWei as he did what he had written in the proposal, which is make the front end pixel perfect and even implement some changes. Also, he was always very promt and kind in his communications.",
+    "country": "es"
+  }
+]
