@@ -1,5 +1,7 @@
 import "./globals.scss";
 import { DM_Sans } from "next/font/google";
+import AppHeader from "@/components/AppHeader";
+import AppFooter from "@/components/AppFooter";
 
 const DMSans = DM_Sans({
   subsets: ["latin"],
@@ -18,7 +20,11 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={DMSans.className}>{children}</body>
+      <body className={DMSans.className}>
+        <AppHeader />
+        {children}
+        <AppFooter />
+      </body>
     </html>
   );
 }
