@@ -9,10 +9,10 @@ export default function AppHeader() {
     <header className="mt-4">
       <div className="container flex justify-between items-center">
         <Link href="/" passHref>
-          <div className="section-title hoverOpacity">yewyewXD</div>
+          <div className="text-main font-bold hoverOpacity">yewww.dev</div>
         </Link>
 
-        <nav className="flex items-center font-medium">
+        <nav className="flex items-center font-bold">
           {navItems.map((navItem) => (
             <div
               className={navItem.subLinks ? "NavItemExpand relative" : ""}
