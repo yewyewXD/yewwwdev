@@ -1,13 +1,12 @@
 import React from "react";
 import Image from "next/image";
-import styles from "../../styles/pages/home.module.scss";
 import projects from "@/json/projects.json";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faLink } from "@fortawesome/free-solid-svg-icons";
 
 const Card = ({ name, description, image, size, style }: any) => {
   return (
-    <div className={styles.ProjectCard} style={style}>
+    <div className="ProjectCard" style={style}>
       <div className="h-full w-full absolute opacity-0 transition-opacity duration-200 bg-black top-0 left-0 hover:opacity-80 z-50 all-center">
         <a
           href="https://github.com/yewyewXD"
@@ -30,7 +29,7 @@ const Card = ({ name, description, image, size, style }: any) => {
         </a>
       </div>
       <div
-        className={styles[`ProjectCard__Img${size}`]}
+        className={`ProjectCard__Img${size}`}
         style={{ backgroundImage: `url('/images/project/${image}')` }}
       ></div>
       <div className="mt-5">
@@ -54,11 +53,11 @@ const CardTwo = ({
 }: any) => {
   return (
     <div
-      className={styles.ProjectCard}
+      className="ProjectCard"
       style={{ flexDirection: reversed ? "row-reverse" : "row" }}
     >
       <div
-        className={styles[`ProjectCard__Img${size}`]}
+        className={`ProjectCard__Img${size}`}
         style={{ backgroundImage: `url('/images/project/${image}')` }}
       ></div>
 

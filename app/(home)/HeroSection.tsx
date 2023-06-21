@@ -1,7 +1,6 @@
 /* eslint-disable @next/next/no-img-element */
 import React from "react";
 import Image from "next/image";
-import styles from "../../styles/pages/home.module.scss";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCommentAlt, faStar } from "@fortawesome/free-solid-svg-icons";
 
@@ -88,7 +87,7 @@ const HeroSection = () => {
         </div>
 
         <div className="flex justify-end font-semibold text-sm">
-          <div className={styles.HeroCard}>
+          <div className="HeroCard">
             <div className="h-96 w-96 rounded-2xl mb-3 relative">
               <Image
                 src="/images/hero-nft-card.gif"
