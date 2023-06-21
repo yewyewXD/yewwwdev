@@ -67,7 +67,6 @@ big {
 
 nav {
   font-size: 15px;
-  font-family: "Inter", sans-serif;
 }
 
 small {
@@ -80,7 +79,6 @@ small {
   color: $main-color;
   text-transform: uppercase;
   font-weight: 800;
-  font-family: "Inter", sans-serif;
 }
 
 .text-light {
@@ -159,10 +157,11 @@ body {
   &centerleft {
     top: 0 !important;
     right: 40px !important;
-    left: unset !important;
+    position: absolute;
   }
   &centerright {
     top: 0 !important;
+    position: absolute;
   }
 }
 
