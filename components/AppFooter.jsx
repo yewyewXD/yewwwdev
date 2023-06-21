@@ -1,5 +1,6 @@
 import React from "react";
 import Image from "next/image";
+import Link from "next/link";
 
 export default function AppFooter() {
   return (
@@ -8,8 +9,8 @@ export default function AppFooter() {
         Copyright &#169;{new Date().getFullYear()} yewyewXD. All right reserved.
       </span>
 
-      <div>
-        <a
+      <div className="flex items-center">
+        <Link
           className="hoverOpacity"
           href="https://www.linkedin.com/in/yewyewxd/"
           target="_blank"
@@ -21,16 +22,16 @@ export default function AppFooter() {
             height={20}
             width={20}
           />
-        </a>
+        </Link>
 
-        <a
+        <Link
           className="ml-2 hoverOpacity"
           href="https://github.com/yewyewXD"
           target="_blank"
           rel="noopener noreferrer"
         >
           <Image src="/images/brand/github.png" alt="" height={20} width={20} />
-        </a>
+        </Link>
       </div>
     </footer>
   );
