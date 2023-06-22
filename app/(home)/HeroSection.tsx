@@ -2,7 +2,12 @@
 import React from "react";
 import Image from "next/image";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faCommentAlt, faStar } from "@fortawesome/free-solid-svg-icons";
+import {
+  faCommentAlt,
+  faImage,
+  faMountainSun,
+  faStar,
+} from "@fortawesome/free-solid-svg-icons";
 
 const HeroSection = () => {
   const techs = [
@@ -21,23 +26,24 @@ const HeroSection = () => {
       <div className="container grid grid-cols-2 border-b pb-24">
         <div className="flex flex-col">
           <div className="flex flex-col relative">
-            <big className="section-title">web3 react developer</big>
+            <big className="section-title">react software engineer</big>
             <h1 className="my-5">
-              Make your dream dApp <u className="underline-main">come true</u>
+              Make your dream app <u className="underline-main">come true</u>
             </h1>
             <p className="text-light">
-              From idea to product. With passion and expertise. By one of the
-              best web3 engineers in Malaysia.
+              Are you a visionary founder seeking to make a positive impact on
+              the world? Look no further! Together, we will be crafting
+              meaningful solutions that change lives.
             </p>
             <div className="mt-8 flex items-center">
               <a href="#projects" className="button-main">
-                View Projects
+                Do Business w/ Me
               </a>
               <div className="ml-7 flex items-center underline hoverOpacity">
-                <FontAwesomeIcon icon={faCommentAlt} className="w-3 mr-1" />
-                <span>
-                  <big>Chat Now</big>
-                </span>
+                <FontAwesomeIcon icon={faImage} className="w-4 mr-2" />
+                <a href="#projects">
+                  <big>View Projects</big>
+                </a>
               </div>
             </div>
 
@@ -54,12 +60,7 @@ const HeroSection = () => {
             />
           </div>
 
-          <a
-            href="https://www.upwork.com/freelancers/~01186da3d6211b3ce4"
-            rel="noopener noreferrer"
-            target="_blank"
-            className="mt-20 flex items-center hoverOpacity"
-          >
+          <div className="mt-20 flex items-center">
             <div className="flex items-center border-r pr-7">
               <Image
                 src="/images/brand/upwork.png"
@@ -68,7 +69,9 @@ const HeroSection = () => {
                 height={40}
                 width={40}
               />
-              <big className="text-light ml-3 font-semibold">TOP RATED</big>
+              <big className="text-light ml-3 font-semibold">
+                TOP RATED 2021
+              </big>
             </div>
 
             <div className="flex items-center pl-9">
@@ -83,7 +86,7 @@ const HeroSection = () => {
                 <small className="font-semibold">AVG RATING</small>
               </div>
             </div>
-          </a>
+          </div>
         </div>
 
         <div className="flex justify-end font-semibold text-sm">
@@ -101,9 +104,9 @@ const HeroSection = () => {
             <div className="px-2 flex justify-between items-center">
               <div>
                 <div className="text-dark" style={{ marginBottom: "2px" }}>
-                  Web3 React Developer
+                  React Software Engineer
                 </div>
-                <div className="text-base">Yew KangWei</div>
+                <div className="text-base">KangWei Yew</div>
               </div>
 
               <div className="flex items-center">
@@ -141,11 +144,11 @@ const HeroSection = () => {
               <div className="h-full w-full grid grid-cols-2">
                 <div>
                   <div className="text-dark mb-1">Availability</div>
-                  <div>30h / week</div>
+                  <div>20h / week</div>
                 </div>
                 <div>
-                  <div className="text-dark mb-1">Tech stack</div>
-                  <div>Next, Node, Tailwind, Ethers, Web3, Moralis</div>
+                  <div className="text-dark mb-1">Best skills</div>
+                  <div>Next, React, Node, Tailwind</div>
                 </div>
               </div>
             </div>
