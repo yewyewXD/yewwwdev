@@ -1,0 +1,44 @@
+Image Source & Attribution
+
+- Hero Section -
+
+Home Page Inspiration:
+https://toka.peerduck.com/nft-collection-landing/
+
+About Page Inspiration:
+https://toka.peerduck.com/about-us-dark/
+
+Contact Page Inspiration:
+https://toka.peerduck.com/contact-us-dark/
+
+Pixel Logo Generator:
+https://giventofly.github.io/pixelit/
+
+Tech Images:
+https://icons8.com/icon/r2OarXWQc7B6/next.js
+https://icons8.com/icon/58811/react-native
+https://icons8.com/icon/54087/nodejs
+https://icons8.com/icon/108784/javascript
+https://icons8.com/icon/eJppnX5q2FuR/sass
+https://icons8.com/icon/74402/mongodb
+https://moralis.io/
+https://docs.ethers.io/v5/
+
+Country Images:
+https://www.flaticon.com/free-icons/switzerland
+https://www.flaticon.com/free-icons/australia
+https://www.flaticon.com/free-icons/canada
+https://www.flaticon.com/free-icons/korea
+https://www.flaticon.com/free-icons/united-states
+https://www.flaticon.com/free-icons/singapore
+https://www.flaticon.com/free-icons/spain
+https://www.flaticon.com/free-icons/thailand
+
+Brand Img:
+https://www.flaticon.com/free-icons/github
+https://www.flaticon.com/free-icons/linkedin
+https://www.flaticon.com/free-icons/telegram
+https://www.flaticon.com/free-icons/whatsapp
+https://www.linkedin.com/company/upwork/
+https://www.linkedin.com/company/innoloft/
+https://apksshare.com/upwork-for-freelancers-apk-mod-download-1-36-1/
