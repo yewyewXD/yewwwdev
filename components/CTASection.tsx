@@ -24,12 +24,11 @@ const CTASection = () => {
           </div>
 
           <div className="text-light font-medium font-heading mt-6 mb-8 w-8/12 mx-auto">
-            Jump in on a call with me and I will explain how to transform your
-            ideas into an actual web3.0 product. I look forward to our
-            collaboration!
+            Hit me up on chat and we will navigate the path towards transforming
+            your idea into a remarkable product. See you there!
           </div>
 
-          <button className="button-main">Get a free consultation</button>
+          <button className="button-main">Hop on Chat Now</button>
         </div>
       </div>
     </section>

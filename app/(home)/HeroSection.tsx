@@ -37,7 +37,7 @@ const HeroSection = () => {
             </p>
             <div className="mt-8 flex items-center">
               <a href="#projects" className="button-main">
-                Do Business w/ Me
+                Let&apos;s Talk Business
               </a>
               <div className="ml-7 flex items-center underline hoverOpacity">
                 <FontAwesomeIcon icon={faImage} className="w-4 mr-2" />

@@ -93,8 +93,8 @@ const ProjectSection = () => {
     <section id="projects" className="ProjectSection pt-28">
       <div className="container">
         <div className="text-center mb-16">
-          <big className="mb-5 section-title">Proud Creations</big>
-          <h2>Built with my heart and soul</h2>
+          <big className="mb-5 section-title">Projects</big>
+          <h2>Real problems, real solutions</h2>
         </div>
 
         <div>
