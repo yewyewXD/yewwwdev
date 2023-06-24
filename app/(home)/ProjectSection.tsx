@@ -158,6 +158,40 @@ const ProjectSection = () => {
             </div>
           </div>
         </div>
+
+        <div className="mt-20 flex gap-10 justify-between">
+          <div className="rounded-2xl bg-secondary p-8">
+            <Image
+              className="rounded-2xl"
+              src="/images/project/SOS.gif"
+              alt=""
+              width={280}
+              height={280}
+            />
+          </div>
+
+          <div className="rounded-2xl bg-secondary p-8">
+            <div className="flex items-center justify-center bg-white h-full w-full rounded-2xl px-8">
+              <Image
+                className=""
+                src="/images/project/innoloft.svg"
+                alt=""
+                width={216}
+                height={216}
+              />
+            </div>
+          </div>
+
+          <div className="rounded-2xl bg-secondary p-8">
+            <Image
+              className="rounded-2xl"
+              src="/images/project/CE.gif"
+              alt=""
+              width={280}
+              height={280}
+            />
+          </div>
+        </div>
       </div>
     </section>
   );
