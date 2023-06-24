@@ -1,13 +1,12 @@
 import React from "react";
 import Image from "next/image";
-import projects from "@/json/projects.json";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowUpRightFromSquare } from "@fortawesome/free-solid-svg-icons";
 import Link from "next/link";
 
 const ProjectSection = () => {
   return (
-    <section id="projects" className="ProjectSection pt-28">
+    <section id="projects" className="ProjectSection xl:pt-28 pt-6">
       <div className="container">
         <div className="text-center mb-16">
           <big className="mb-5 section-title">Projects</big>

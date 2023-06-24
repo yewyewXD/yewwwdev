@@ -13,7 +13,7 @@ import Carousel from "nuka-carousel";
 
 const ReviewSection = () => {
   return (
-    <section id="reviews" className="pt-32">
+    <section id="reviews" className="xl:pt-32 pt-24">
       <div className="container grid grid-cols-12">
         <div className="col-span-5">
           <big className="section-title">testimonial</big>

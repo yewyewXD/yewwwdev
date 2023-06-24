@@ -13,16 +13,14 @@ $light-color: #b3b4b7;
   
 */
 
-h1 {
-  font-size: 58px;
-  font-weight: 700;
-  line-height: 1.1em;
-}
-
 h2 {
   font-size: 43px;
   font-weight: 700;
   line-height: 1.1em;
+
+  @media (max-width: 1279.98px) {
+    font-size: 36px;
+  }
 }
 
 h3 {
@@ -59,6 +57,10 @@ p {
   font-size: 18px;
   line-height: 1.9em;
   color: $dark-color;
+
+  @media (max-width: 1279.98px) {
+    font-size: 16px;
+  }
 }
 
 big {
@@ -124,6 +126,10 @@ body {
   width: 85%;
   max-width: 1140px;
   margin: 0 auto;
+
+  @media (max-width: 1279.98px) {
+    width: 90%;
+  }
 }
 
 .all-center {
@@ -155,6 +161,10 @@ body {
 
   &:hover {
     opacity: 0.8;
+  }
+
+  @media (max-width: 1279.98px) {
+    font-size: 16px;
   }
 }
 
@@ -282,43 +292,9 @@ nav span {
   display: flex;
   flex-direction: column;
   max-width: 400px;
-}
+  height: max-content;
 
-.ProjectCard {
-  border-radius: 30px;
-  padding: 30px;
-  width: min-content;
-  display: flex;
-  flex-direction: row;
-  position: relative;
-  background-color: #0b1224;
-  margin-bottom: 30px;
-  overflow: hidden;
-  width: 100%;
-
-  &__Img {
-    &LG {
-      height: 522px;
-      width: 522px;
-    }
-    &MD {
-      height: 367px;
-      width: 367px;
-    }
-    &SM {
-      height: 225px;
-      width: 225px;
-    }
-
-    &LG,
-    &MD,
-    &SM {
-      border-radius: 30px;
-      background-color: white;
-      background-position: center;
-      background-size: cover;
-      background-repeat: no-repeat;
-      flex-shrink: 0;
-    }
+  @media (max-width: 1279.98px) {
+    max-width: 338px;
   }
 }

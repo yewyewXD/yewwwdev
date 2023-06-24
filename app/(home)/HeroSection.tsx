@@ -22,12 +22,12 @@ const HeroSection = () => {
   ];
 
   return (
-    <section className="HeroSection pt-32">
+    <section className="HeroSection xl:pt-32 pt-20">
       <div className="container grid grid-cols-2 border-b pb-24">
-        <div className="flex flex-col">
+        <div className="flex flex-col justify-center">
           <div className="flex flex-col relative">
             <big className="section-title">react software engineer</big>
-            <h1 className="my-5">
+            <h1 className="my-6 xl:text-6xl text-5xl font-bold leading-none">
               Make your dream app <u className="underline-main">come true</u>
             </h1>
             <p className="text-light">
@@ -55,7 +55,7 @@ const HeroSection = () => {
 
             <img
               src="/images/general-star.png"
-              className="absolute h-7 w-7 bottom-0 right-24"
+              className="absolute h-7 w-7 bottom-0 xl:right-24 right-0"
               alt=""
             />
           </div>
@@ -91,12 +91,12 @@ const HeroSection = () => {
 
         <div className="flex justify-end font-semibold text-sm">
           <div className="HeroCard">
-            <div className="h-96 w-96 rounded-2xl mb-3 relative">
+            <div className="xl:h-96 h-80 xl:w-96 w-80 rounded-2xl mb-3 relative">
               <Image
                 src="/images/hero-nft-card.gif"
                 className="rounded-2xl"
                 alt=""
-                layout="fill"
+                fill
                 quality={60}
               />
               <div className="absolute h-full w-full opacity-10 bg-main rounded-2xl"></div>
@@ -156,7 +156,7 @@ const HeroSection = () => {
         </div>
       </div>
 
-      <div className="container py-10 flex justify-evenly opacity-70">
+      <div className="container py-10 flex xl:justify-evenly justify-between opacity-70">
         {techs.map((tech) => (
           <div className="" key={`icon-${tech}`}>
             <Image
