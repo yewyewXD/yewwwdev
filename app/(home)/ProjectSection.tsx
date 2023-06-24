@@ -6,7 +6,7 @@ import Link from "next/link";
 
 const ProjectSection = () => {
   return (
-    <section id="projects" className="ProjectSection xl:pt-28 pt-6">
+    <section id="projects" className="ProjectSection xl:pt-28 pt-20">
       <div className="container">
         <div className="text-center mb-16">
           <big className="mb-5 section-title">Projects</big>
@@ -159,7 +159,7 @@ const ProjectSection = () => {
         </div>
 
         <div className="mt-20 flex gap-10 justify-between">
-          <div className="rounded-2xl bg-secondary p-8">
+          <div className="rounded-2xl bg-secondary xl:p-8 p-6">
             <Image
               className="rounded-2xl"
               src="/images/project/SOS.gif"
@@ -169,7 +169,7 @@ const ProjectSection = () => {
             />
           </div>
 
-          <div className="rounded-2xl bg-secondary p-8">
+          <div className="rounded-2xl bg-secondary xl:p-8 p-6">
             <div className="flex items-center justify-center bg-white h-full w-full rounded-2xl px-8">
               <Image
                 className=""
@@ -181,7 +181,7 @@ const ProjectSection = () => {
             </div>
           </div>
 
-          <div className="rounded-2xl bg-secondary p-8">
+          <div className="rounded-2xl bg-secondary xl:p-8 p-6">
             <Image
               className="rounded-2xl"
               src="/images/project/CE.gif"

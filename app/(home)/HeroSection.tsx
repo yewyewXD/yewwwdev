@@ -49,13 +49,13 @@ const HeroSection = () => {
 
             <img
               src="/images/general-star.png"
-              className="absolute h-9 w-9 top-0 right-0"
+              className="floatingStar absolute h-9 w-9 top-0 right-0 shadow"
               alt=""
             />
 
             <img
               src="/images/general-star.png"
-              className="absolute h-7 w-7 bottom-0 xl:right-24 right-0"
+              className="floatingStar absolute h-7 w-7 bottom-0 xl:right-24 right-0 animationDelay"
               alt=""
             />
           </div>

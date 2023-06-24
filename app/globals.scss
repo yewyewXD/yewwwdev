@@ -43,6 +43,10 @@ h5 {
 
 .bigger {
   font-size: 22px;
+
+  @media (max-width: 1279.98px) {
+    font-size: 20px;
+  }
 }
 
 .medium {
@@ -120,6 +124,10 @@ body {
   background-color: #020710;
   color: white;
   font-size: 18px;
+
+  @media (max-width: 1279.98px) {
+    font-size: 16px;
+  }
 }
 
 .container {
@@ -206,10 +214,19 @@ footer {
   background: url("/images/drawing-lightning.png") 95% 0 / 180px auto no-repeat;
 }
 .ProjectSection {
-  background: url("/images/drawing-tornado.png") 1% 0 / 300px auto no-repeat;
+  background: url("/images/drawing-tornado.png") 1% 0 / 20vw auto no-repeat;
+
+  @media (max-width: 1279.98px) {
+    background: url("/images/drawing-tornado.png") 98% 30% / 280px auto
+      no-repeat;
+  }
 }
 .CTASection {
-  background: url("/images/drawing-arrow.png") 96% 0 / 185px auto no-repeat;
+  background: url("/images/drawing-arrow.png") 98% 0 / 185px auto no-repeat;
+
+  @media (max-width: 1535.98px) {
+    background: none;
+  }
 }
 
 nav span {
@@ -296,5 +313,30 @@ nav span {
 
   @media (max-width: 1279.98px) {
     max-width: 338px;
+  }
+}
+
+.floatingStar {
+  animation-name: floatingAnimation;
+  animation-duration: 3s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+}
+
+.animationDelay {
+  animation-delay: 1s;
+}
+
+@keyframes floatingAnimation {
+  0% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(-15px);
+  }
+
+  100% {
+    transform: translateY(0px);
   }
 }
