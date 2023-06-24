@@ -98,6 +98,10 @@ small {
   text-decoration-color: $main-color;
 }
 
+.shadow-main {
+  box-shadow: 0 10px 40px #44b5fb5b;
+}
+
 /* 
  
   Main Styles
@@ -147,6 +151,7 @@ body {
   color: black;
   font-weight: 700;
   transition: 0.3s;
+  display: inline-block;
 
   &:hover {
     opacity: 0.8;
@@ -183,7 +188,8 @@ footer {
   background: linear-gradient(to bottom, #0b1224, #020710);
 }
 
-.HeroSection {
+.HeroSection,
+.radialGradient {
   background: radial-gradient(#44b5fb30, transparent 70%);
 }
 .ValueSection {

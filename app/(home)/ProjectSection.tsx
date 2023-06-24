@@ -2,91 +2,8 @@ import React from "react";
 import Image from "next/image";
 import projects from "@/json/projects.json";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faLink } from "@fortawesome/free-solid-svg-icons";
-
-const Card = ({ name, description, image, size, style }: any) => {
-  return (
-    <div className="ProjectCard" style={style}>
-      <div className="h-full w-full absolute opacity-0 transition-opacity duration-200 bg-black top-0 left-0 hover:opacity-80 z-50 all-center">
-        <a
-          href="https://github.com/yewyewXD"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <FontAwesomeIcon
-            icon={faLink}
-            className="w-10 mr-8 bg-main text-black px-1 py-2 rounded-md transition duration-200 hover:scale-110 cursor-pointer"
-          />
-        </a>
-
-        <a
-          href="https://github.com/yewyewXD"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="relative h-10 w-10 transition duration-200 hover:scale-110 cursor-pointer"
-        >
-          <Image src="/images/brand/github.png" alt="" layout="fill" />
-        </a>
-      </div>
-      <div
-        className={`ProjectCard__Img${size}`}
-        style={{ backgroundImage: `url('/images/project/${image}')` }}
-      ></div>
-      <div className="mt-5">
-        <h4>{name}</h4>
-        <div className="leading-tight mt-2">
-          <big className="text-light">{description}</big>
-        </div>
-      </div>
-    </div>
-  );
-};
-
-const CardTwo = ({
-  name,
-  description,
-  image,
-  size,
-  style,
-  reversed,
-  inside,
-}: any) => {
-  return (
-    <div
-      className="ProjectCard"
-      style={{ flexDirection: reversed ? "row-reverse" : "row" }}
-    >
-      <div
-        className={`ProjectCard__Img${size}`}
-        style={{ backgroundImage: `url('/images/project/${image}')` }}
-      ></div>
-
-      <div
-        className={`flex flex-col py-7 flex-grow ${reversed ? "mr-7" : "ml-7"}`}
-      >
-        <div className="mb-7">
-          <h4>{name}</h4>
-          <div className="leading-tight mt-2">
-            <big className="text-light">{description}</big>
-          </div>
-        </div>
-
-        {!!inside && (
-          <div>
-            <h5>Whats inside?</h5>
-            <div className="leading-tight mt-2">
-              <big className="text-light">{inside}</big>
-            </div>
-          </div>
-        )}
-
-        <div className="mt-7 flex-grow flex items-end">
-          <button className="button-main">View live</button>
-        </div>
-      </div>
-    </div>
-  );
-};
+import { faArrowUpRightFromSquare } from "@fortawesome/free-solid-svg-icons";
+import Link from "next/link";
 
 const ProjectSection = () => {
   return (
@@ -97,10 +14,144 @@ const ProjectSection = () => {
           <h2>Real problems, real solutions</h2>
         </div>
 
-        <div>
-          {projects.map((project) => (
-            <CardTwo key={project.description} {...project} size="MD" />
-          ))}
+        <div className="flex items-center gap-20">
+          <div className="flex items-center flex-shrink-0 shadow-main rounded-xl">
+            <Image
+              className="h-auto rounded-xl"
+              src="/images/project/tcmfinder-mobile.png"
+              alt=""
+              height={280}
+              width={280}
+            />
+          </div>
+
+          <div className="col-span-2 flex flex-col gap-8 justify-center">
+            <div>
+              <h3 className="underline-main">TCMFinder</h3>
+              <div className="leading-tight mt-2">
+                <big className="text-light">
+                  Find the most relevant Chinese medicine shop by searching
+                  through every single review of all nearby shops using your
+                  search term (symptoms) and location.
+                </big>
+              </div>
+            </div>
+
+            <div>
+              <h5>Problem</h5>
+              <div className="leading-tight mt-2">
+                <big className="text-light">
+                  To address my girlfriend&apos;s back pain, I had to tediously
+                  read the reviews every shop on Google Maps, searching for
+                  those that had successfully treated similar back problems.
+                </big>
+              </div>
+            </div>
+
+            <div>
+              <h5>Solution</h5>
+              <div className="leading-tight mt-2">
+                <big className="text-light">
+                  Scrape every local shops, index all the shops & reviews on
+                  Meilisearch, and call the search API with NextJs serverless
+                  function.
+                </big>
+              </div>
+            </div>
+
+            <div>
+              <h5>Tech Stack</h5>
+              <div className="leading-tight mt-2">
+                <big className="text-light">
+                  Typescript, NextJS, NodeJS, Meilisearch, Tailwind, Sass
+                </big>
+              </div>
+            </div>
+
+            <div className="mt-10">
+              <Link
+                href={"https://tcmfinder.app/en"}
+                target="_blank"
+                rel="noopener"
+                className="button-main"
+              >
+                View live{" "}
+                <FontAwesomeIcon
+                  className="inline ml-1 w-4"
+                  icon={faArrowUpRightFromSquare}
+                />
+              </Link>
+            </div>
+          </div>
+        </div>
+
+        <div className="flex flex-row-reverse items-center mt-20 gap-20">
+          <div className="flex items-center radialGradient flex-shrink-0 shadow-main rounded-xl">
+            <Image
+              className="h-auto rounded-xl"
+              src="/images/project/spuun-mobile.png"
+              alt=""
+              width={280}
+              height={280}
+            />
+          </div>
+
+          <div className="col-span-2 flex flex-col gap-8 justify-center">
+            <div>
+              <h3 className="underline-main">Spuun</h3>
+              <div className="leading-tight mt-2">
+                <big className="text-light">
+                  Find the most relevant Chinese medicine shop by searching
+                  through every single review of all nearby shops using your
+                  search term (symptoms) and location.
+                </big>
+              </div>
+            </div>
+
+            <div>
+              <h5>Problem</h5>
+              <div className="leading-tight mt-2">
+                <big className="text-light">
+                  To address my girlfriend&apos;s back pain, I had to tediously
+                  read the reviews every shop on Google Maps, searching for
+                  those that had successfully treated similar back problems.
+                </big>
+              </div>
+            </div>
+
+            <div>
+              <h5>Solution</h5>
+              <div className="leading-tight mt-2">
+                <big className="text-light">
+                  Scrape every local shops, translate the reviews to English,
+                </big>
+              </div>
+            </div>
+
+            <div>
+              <h5>Tech Stack</h5>
+              <div className="leading-tight mt-2">
+                <big className="text-light">
+                  Typescript, NextJS, NodeJS, Meilisearch, Tailwind, Sass
+                </big>
+              </div>
+            </div>
+
+            <div>
+              <Link
+                href={"https://tcmfinder.app/en"}
+                target="_blank"
+                rel="noopener"
+                className="button-main"
+              >
+                View live{" "}
+                <FontAwesomeIcon
+                  className="inline ml-1"
+                  icon={faArrowUpRightFromSquare}
+                />
+              </Link>
+            </div>
+          </div>
         </div>
       </div>
     </section>
