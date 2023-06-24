@@ -30,9 +30,8 @@ const ProjectSection = () => {
               <h3 className="underline-main">TCMFinder</h3>
               <div className="leading-tight mt-2">
                 <big className="text-light">
-                  Find the most relevant Chinese medicine shop by searching
-                  through every single review of all nearby shops using your
-                  search term (symptoms) and location.
+                  Find the most relevant Traditional Chinese Medicine shop based
+                  on your symptoms and location.
                 </big>
               </div>
             </div>
@@ -53,8 +52,9 @@ const ProjectSection = () => {
               <div className="leading-tight mt-2">
                 <big className="text-light">
                   Scrape every local shops, index all the shops & reviews on
-                  Meilisearch, and call the search API with NextJs serverless
-                  function.
+                  Meilisearch, and call the Meilisearch search API. The backend
+                  will use the search term and scan through every reviews of all
+                  shops.
                 </big>
               </div>
             </div>
@@ -63,7 +63,7 @@ const ProjectSection = () => {
               <h5>Tech Stack</h5>
               <div className="leading-tight mt-2">
                 <big className="text-light">
-                  Typescript, NextJS, NodeJS, Meilisearch, Tailwind, Sass
+                  Typescript - NextJS - NodeJS - Meilisearch - Tailwind
                 </big>
               </div>
             </div>
@@ -101,9 +101,8 @@ const ProjectSection = () => {
               <h3 className="underline-main">Spuun</h3>
               <div className="leading-tight mt-2">
                 <big className="text-light">
-                  Find the most relevant Chinese medicine shop by searching
-                  through every single review of all nearby shops using your
-                  search term (symptoms) and location.
+                  Launch your online restaurant fast without worrying about
+                  unreasonable commission charges.
                 </big>
               </div>
             </div>
@@ -112,9 +111,10 @@ const ProjectSection = () => {
               <h5>Problem</h5>
               <div className="leading-tight mt-2">
                 <big className="text-light">
-                  To address my girlfriend&apos;s back pain, I had to tediously
-                  read the reviews every shop on Google Maps, searching for
-                  those that had successfully treated similar back problems.
+                  Many restaurants complain about the high commission charges of
+                  food delivery apps like GrabFood. They raise the food price in
+                  order to make enough money, but the consumers (including me)
+                  aren&apos;t happy about it.
                 </big>
               </div>
             </div>
@@ -123,7 +123,11 @@ const ProjectSection = () => {
               <h5>Solution</h5>
               <div className="leading-tight mt-2">
                 <big className="text-light">
-                  Scrape every local shops, translate the reviews to English,
+                  Charge restaurants on a subscription basis (free plan
+                  available). They will have an online ordering website and
+                  access to the order management system on mobile. We partner
+                  with Lalamove for the delivery service, which is cheaper than
+                  GrabFood.
                 </big>
               </div>
             </div>
@@ -132,21 +136,22 @@ const ProjectSection = () => {
               <h5>Tech Stack</h5>
               <div className="leading-tight mt-2">
                 <big className="text-light">
-                  Typescript, NextJS, NodeJS, Meilisearch, Tailwind, Sass
+                  React Native (Expo) - NextJS - NodeJS - PostgreSQL - Prisma -
+                  Redis
                 </big>
               </div>
             </div>
 
             <div>
               <Link
-                href={"https://tcmfinder.app/en"}
+                href={"https://ohjackie.spuun.me"}
                 target="_blank"
                 rel="noopener"
                 className="button-main"
               >
                 View live{" "}
                 <FontAwesomeIcon
-                  className="inline ml-1"
+                  className="inline ml-1 w-4"
                   icon={faArrowUpRightFromSquare}
                 />
               </Link>
