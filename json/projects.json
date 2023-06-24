@@ -1,14 +1,21 @@
 [
   {
-    "name": "ChainEntities.io",
-    "description": "A Game-Fi Metaverse project",
-    "inside": "Landing Page, Minting dApp, Decentralized Exchange",
-    "image": "SOS.gif"
+    "name": "TCMFinder",
+    "description": "Find the most relevant Traditional Chinese Medicine shop based on your symptoms and location.",
+    "problem": "To address my girlfriend's back pain, I had to tediously read the reviews every shop on Google Maps, searching for those that had successfully treated similar back problems.",
+    "solution": "Scrape every local shops, index all the shops & reviews on Meilisearch, and call the Meilisearch search API. The backend will use the search term and scan through every reviews of all shops.",
+    "techStack": "Typescript - NextJS - NodeJS - Meilisearch - Tailwind",
+    "image": "tcmfinder-mobile.png",
+    "reversed": false
   },
+
   {
-    "name": "Wallet Stalker",
-    "description": "Check profit/loss, ROI, ",
-    "image": "SOS.gif",
+    "name": "Spuun",
+    "description": "Launch your online restaurant fast without worrying about unreasonable commission charges.",
+    "problem": "Many restaurants complain about the high commission charges of food delivery apps like GrabFood. They raise the food price in order to make enough money, but the consumers (including me) aren't happy about it.",
+    "solution": "Charge restaurants on a subscription basis (free plan available). They will have an online ordering website and access to the order management system on mobile. We partner with Lalamove for the delivery service, which is cheaper than GrabFood.",
+    "techStack": "React Native (Expo) - NextJS - NodeJS - PostgreSQL - Prisma - Redis",
+    "image": "spuun-mobile.png",
     "reversed": true
   }
 ]

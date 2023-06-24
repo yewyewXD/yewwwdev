@@ -13,9 +13,9 @@ import Carousel from "nuka-carousel";
 
 const ReviewSection = () => {
   return (
-    <section id="reviews" className="xl:pt-32 pt-24">
-      <div className="container grid grid-cols-12">
-        <div className="col-span-5">
+    <section id="reviews" className="xl:pt-32 md:pt-24 pt-16">
+      <div className="container md:grid flex flex-col grid-cols-12">
+        <div className="col-span-5 md:mb-0 mb-8 md:text-left text-center">
           <big className="section-title">testimonial</big>
           <h2 className="mt-2">
             Trusted by clients from <u className="underline-main">big brands</u>{" "}
@@ -23,7 +23,7 @@ const ReviewSection = () => {
           </h2>
         </div>
 
-        <div className="col-span-7 pl-5 relative">
+        <div className="col-span-7 md:pl-5 relative">
           <Carousel
             slidesToShow={1}
             animation="fade"
