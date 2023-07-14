@@ -1,8 +1,7 @@
+"use client";
+
 /* eslint-disable @next/next/no-img-element */
-import {
-  faArrowRight,
-  faArrowRightLong,
-} from "@fortawesome/free-solid-svg-icons";
+import { faArrowRightLong } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import React from "react";
 
@@ -40,7 +39,15 @@ const CTASection = () => {
             </span>
           </div>
 
-          <button className="button-main">
+          <button
+            className="button-main"
+            onClick={() => {
+              if (window?.tidioChatApi) {
+                window.tidioChatApi.show();
+                window.tidioChatApi.open();
+              }
+            }}
+          >
             Hop on Chat Now{" "}
             <FontAwesomeIcon className="w-4 ml-1" icon={faArrowRightLong} />
           </button>

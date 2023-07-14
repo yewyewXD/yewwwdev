@@ -1,3 +1,5 @@
+"use client";
+
 /* eslint-disable @next/next/no-img-element */
 import React from "react";
 import Image from "next/image";
@@ -44,12 +46,17 @@ const HeroSection = () => {
             </p>
 
             <div className="lg:mt-8 mt-6 flex lg:flex-row flex-col items-center">
-              <a
-                href="#projects"
+              <button
+                onClick={() => {
+                  if (window?.tidioChatApi) {
+                    window.tidioChatApi.show();
+                    window.tidioChatApi.open();
+                  }
+                }}
                 className="button-main lg:w-auto w-full lg:mb-0 mb-6"
               >
                 Let&apos;s Talk Business
-              </a>
+              </button>
 
               <div className="lg:ml-7 flex items-center underline hoverOpacity">
                 <FontAwesomeIcon icon={faImage} className="w-4 mr-2" />

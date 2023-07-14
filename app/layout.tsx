@@ -2,6 +2,7 @@ import "./globals.scss";
 import { DM_Sans } from "next/font/google";
 import AppHeader from "@/components/AppHeader";
 import AppFooter from "@/components/AppFooter";
+import Script from "next/script";
 
 const DMSans = DM_Sans({
   subsets: ["latin"],
@@ -24,6 +25,11 @@ export default function RootLayout({
         <AppHeader />
         {children}
         <AppFooter />
+
+        <Script
+          src="//code.tidio.co/8idttcw6wqxjy9liqinkjtmhgiupkqvr.js"
+          strategy="afterInteractive"
+        />
       </body>
     </html>
   );

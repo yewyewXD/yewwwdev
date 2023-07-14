@@ -64,7 +64,7 @@ const ProjectSection = () => {
 
                 <div>
                   <Link
-                    href={"https://tcmfinder.app/en"}
+                    href={project.link}
                     target="_blank"
                     rel="noopener"
                     className="button-main md:w-auto w-full"

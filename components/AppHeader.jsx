@@ -61,7 +61,15 @@ export default function AppHeader() {
             </div>
           ))}
 
-          <button className="NavCTA flex items-center ml-5">
+          <button
+            className="NavCTA flex items-center ml-5"
+            onClick={() => {
+              if (window?.tidioChatApi) {
+                window.tidioChatApi.show();
+                window.tidioChatApi.open();
+              }
+            }}
+          >
             <FontAwesomeIcon icon={faComment} className="w-4" />
             <span className="leading-tight ml-2">{"Let's Chat"}</span>
           </button>
