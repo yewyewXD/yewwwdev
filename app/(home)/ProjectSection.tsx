@@ -4,6 +4,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowUpRightFromSquare } from "@fortawesome/free-solid-svg-icons";
 import Link from "next/link";
 import projects from "@/json/projects.json";
+import freelanceWorks from "@/json/freelanceWorks.json";
 
 const ProjectSection = () => {
   return (
@@ -80,38 +81,50 @@ const ProjectSection = () => {
           ))}
         </div>
 
-        <div className="mt-20 flex gap-10 justify-between">
-          <div className="rounded-2xl bg-secondary xl:p-8 p-6">
-            <Image
-              className="rounded-2xl"
-              src="/images/project/SOS.gif"
-              alt=""
-              width={270}
-              height={270}
-            />
-          </div>
+        <div className="text-center md:my-16 my-12">
+          <big className="mb-5 section-title">Freelance works</big>
+          <h2>Built and sold</h2>
+        </div>
 
-          <div className="rounded-2xl bg-secondary xl:p-8 p-6">
-            <div className="flex items-center justify-center bg-white h-full w-full rounded-2xl px-8">
-              <Image
-                className=""
-                src="/images/project/innoloft.svg"
-                alt=""
-                width={216}
-                height={216}
-              />
+        <div className="mt-20 flex gap-10 justify-center flex-wrap">
+          {freelanceWorks.map((work) => (
+            <div
+              className="rounded-2xl bg-secondary p-6"
+              key={work.description}
+            >
+              <div>
+                <Image
+                  className="rounded-2xl"
+                  src={work.image}
+                  alt=""
+                  width={288}
+                  height={288}
+                />
+              </div>
+
+              <div className="mt-5 w-72">
+                <Link
+                  passHref
+                  href={work.link}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <h4 className="hover:underline cursor-pointer">
+                    {work.name}{" "}
+                    <FontAwesomeIcon
+                      className="inline ml-1 w-4"
+                      icon={faArrowUpRightFromSquare}
+                    />
+                  </h4>
+                </Link>
+                <div className="leading-tight mt-2">
+                  <big className="text-light break-words hyphens-auto">
+                    {work.description}
+                  </big>
+                </div>
+              </div>
             </div>
-          </div>
-
-          <div className="rounded-2xl bg-secondary xl:p-8 p-6">
-            <Image
-              className="rounded-2xl"
-              src="/images/project/CE.gif"
-              alt=""
-              width={270}
-              height={270}
-            />
-          </div>
+          ))}
         </div>
       </div>
     </section>
