@@ -81,15 +81,15 @@ const ProjectSection = () => {
           ))}
         </div>
 
-        <div className="text-center md:my-16 my-12">
+        <div className="text-center md:mb-16 mb-12 mt-16">
           <big className="mb-5 section-title">Freelance works</big>
           <h2>Built and sold</h2>
         </div>
 
-        <div className="mt-20 flex gap-10 justify-center flex-wrap">
+        <div className="flex gap-10 justify-center flex-wrap">
           {freelanceWorks.map((work) => (
             <div
-              className="rounded-2xl bg-secondary p-6"
+              className="rounded-2xl bg-secondary p-6 flex flex-col justify-center items-center"
               key={work.description}
             >
               <div>
@@ -102,7 +102,7 @@ const ProjectSection = () => {
                 />
               </div>
 
-              <div className="mt-5 w-72">
+              <div className="mt-5 sm:max-w-none max-w-xs sm:w-72 md:text-left text-center">
                 <Link
                   passHref
                   href={work.link}
