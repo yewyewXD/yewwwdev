@@ -1,16 +1,17 @@
 [
   {
-    "name": "Reviews",
-    "link": "/#reviews"
-  },
+    "name": "Home",
+    "link": "/",
+    "subLinks": [
+      {
+        "name": "Testimonials",
+        "link": "/#reviews"
+      },
 
-  {
-    "name": "Projects",
-    "link": "/#projects"
-  },
-
-  {
-    "name": "FAQs",
-    "link": "/faq"
+      {
+        "name": "Projects",
+        "link": "/#projects"
+      }
+    ]
   }
 ]

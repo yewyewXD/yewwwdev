@@ -254,9 +254,11 @@ nav span {
   background-color: #141d21;
   border-top: solid 2px $main-color;
   font-size: 15px;
-  border-radius: 0 0 8px 8px;
+  border-radius: 0 0 4px 4px;
   span {
+    display: block;
     padding: 12px 22px;
+    width: 180px;
     &:hover {
       background-color: #11191c;
     }
@@ -351,4 +353,8 @@ nav span {
   100% {
     transform: translateY(0px);
   }
+}
+
+.SideNav {
+  background: #141d21;
 }

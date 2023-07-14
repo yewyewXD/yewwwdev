@@ -6,7 +6,7 @@ export default function AppFooter() {
   return (
     <footer className="py-5 px-4 text-sm text-dark border-t border-gray-700 flex justify-between items-center">
       <span>
-        Copyright &#169;{new Date().getFullYear()} yewyewXD. All right reserved.
+        Copyright &#169;{new Date().getFullYear()} yewwwdev. All right reserved.
       </span>
 
       <div className="flex items-center">
