@@ -2,12 +2,17 @@
 "use client";
 
 /* eslint-disable @next/next/no-img-element */
-import React from "react";
+import React, { useState } from "react";
 import Image from "next/image";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faImage, faStar } from "@fortawesome/free-solid-svg-icons";
+import Lightbox from "yet-another-react-lightbox";
+import Zoom from "yet-another-react-lightbox/plugins/zoom";
+import "yet-another-react-lightbox/styles.css";
 
 const HeroSection = () => {
+  const [showTopRated, setShowTopRated] = useState(false);
+
   const techs = [
     "nextjs",
     "reactjs",
@@ -20,7 +25,7 @@ const HeroSection = () => {
   ];
 
   return (
-    <section className="HeroSection xl:pt-32 pt-20">
+    <section className="HeroSection xl:pt-32 md:pt-20 pt-8">
       <div className="container lg:grid grid-cols-2 border-b sm:pb-24 pb-14">
         <div className="flex flex-col justify-center lg:text-left text-center">
           <div className="flex flex-col relative">
@@ -59,7 +64,7 @@ const HeroSection = () => {
                 Let&apos;s Talk Business
               </button>
 
-              <div className="lg:ml-7 flex items-center underline hoverOpacity">
+              <div className="lg:ml-7 flex items-center underline">
                 <FontAwesomeIcon icon={faImage} className="w-4 mr-2" />
                 <a href="#projects">
                   <big>View Projects</big>
@@ -80,7 +85,10 @@ const HeroSection = () => {
             />
           </div>
 
-          <div className="lg:mt-20 mt-14 flex lg:justify-start justify-center items-center">
+          <div
+            className="lg:mt-20 mt-14 flex lg:justify-start justify-center items-center hoverOpacity"
+            onClick={() => setShowTopRated(true)}
+          >
             <div className="flex items-center border-r sm:pr-7 pr-4">
               <Image
                 src="/images/brand/upwork.png"
@@ -90,11 +98,11 @@ const HeroSection = () => {
                 width={40}
               />
               <big className="text-light ml-3 font-semibold">
-                TOP RATED 2021
+                TOP RATED 2022
               </big>
             </div>
 
-            <div className="flex items-center sm:pl-9 pl-4">
+            <div className="flex items-center sm:pl-9 pl-4 hoverOpacity">
               <h2>4.9</h2>
               <div className="text-light sm:ml-4 ml-3 flex items-center">
                 <FontAwesomeIcon
@@ -108,6 +116,18 @@ const HeroSection = () => {
                 </small>
               </div>
             </div>
+
+            <Lightbox
+              plugins={[Zoom]}
+              render={{
+                buttonNext: () => null,
+                buttonPrev: () => null,
+              }}
+              open={showTopRated}
+              close={() => setShowTopRated(false)}
+              index={0}
+              slides={[{ src: "/images/top-rated.png" }]}
+            />
           </div>
         </div>
 

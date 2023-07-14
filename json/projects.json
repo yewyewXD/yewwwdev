@@ -2,8 +2,8 @@
   {
     "name": "TCMFinder",
     "description": "Find the most relevant Traditional Chinese Medicine shop based on your symptoms and location.",
-    "problem": "To address my girlfriend's back pain, I had to tediously read the reviews every shop on Google Maps, searching for those that had successfully treated similar back problems.",
-    "solution": "Scrape every local shops, index all the shops & reviews on Meilisearch, and call the Meilisearch search API. The backend will use the search term and scan through every reviews of all shops.",
+    "problem": "To address my girlfriend's back pain, I had to tediously read the reviews of every shop on Google Maps, searching for those that had successfully treated similar back problems.",
+    "solution": "Scrape every local shops, index all the shops & reviews on Meilisearch, and call the Meilisearch search API. The backend will take the search term and scan through every reviews of all shops.",
     "techStack": "Typescript - NextJS - NodeJS - Meilisearch - Tailwind",
     "image": "tcmfinder-mobile.png",
     "link": "https://tcmfinder.app/en",
