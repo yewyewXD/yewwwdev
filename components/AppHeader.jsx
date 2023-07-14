@@ -1,3 +1,4 @@
+// @ts-ignore
 "use client";
 
 import React, { useState } from "react";
@@ -64,6 +65,7 @@ export default function AppHeader() {
           <button
             className="NavCTA flex items-center ml-5"
             onClick={() => {
+              // @ts-ignore
               if (window?.tidioChatApi) {
                 window.tidioChatApi.show();
                 window.tidioChatApi.open();
